@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    font-family: "roboto";
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 50%;
+    margin-top: 20px;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;   
+}
+#search{
+    background-color: #eaeaea;
+    box-shadow: inset 0 7px 9px -7px grey;
+}
+input{
+    border: none;
+    background-color: #eaeaea;
+    margin-left: 8px;
+    font-weight: 800;
+}
+.search_area{
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 42px;    
+}
+.search_location{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 40px 60px 40px;
+    background-color: #f7f7f7;
+}
+.button_explore{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.btn_restaurant{
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;  
+    background:linear-gradient(#ff79da, #9356dc) ;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/*///////////////////////////////////functionning section///////////////////////*/
+.functiunning{
+    display: flex;
+    flex-direction: column;  
+}
+.functiunning_title{
+    margin-left: 45px;
+}
+.functiunning_btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    width: 254px;
+    height: 60px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    transition: 1000ms ease-in-out;
+}
+.functiunning_btn:hover{
+    opacity: 0.8; 
+    background-color: #e4d5f6;
+    box-shadow: 2px 4px 15px #787878;
+}
+.functiunning_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.functiunning_number{
+    background-color:  #9356dc;
+    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+    position: relative;
+    left: -18px
+}
+.functiunning_icon{
+    padding-right: 16px;
+    margin-left: -24px;
+    font-size: 1em;
+    color: #7e7e7e;
+}
+.bouton{
+    text-decoration: none;
+    color: black;
+}
+.restaurant_list_title{
+    margin-left: 45px;
+}
+.vertical_img{
+    width: 100%;
+    height: 166px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.restaurant_new{
+    position: absolute;
+    right: 60px;
+    margin-top: 20px;
+    background-color: #99e2d0;
+    color: #008766;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    
+}
+.vertical_card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    height: 226px;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+    margin-bottom: 38px;
+    justify-content: center;
+}
+.vertical_informations{
+    margin-left: -17px;
+    line-height: 0.5;
+}
+.favorite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.favorite__icon--color{
+    font-size: 1.5em;
+    position: absolute;
+    opacity: 0;
+    background: linear-gradient(#ff79da, #9356dc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.favorite__icon--color:hover{
+    opacity: 1;
+    transition: opacity 1000ms ease-in-out;
+}
+.favorite__icon{
+    position: relative;
+    font-size: 1.5em;
+}
+.favorite__icon:hover{
+    opacity: 0;
+    
+}
+
+.title{
+    margin-top: 7px;
+}
+.restaurant_card{
+    text-decoration: none;
+    color: black;
+}
+.informations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.restaurants_cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    background-color: #353535;
+    color: #fff;
+    padding-bottom: 15px;
+}
+footer h3{
+    font-family: "shrikhand";
+    margin-left: 50px;
+    padding-top: 25px;
+}
+.footer_list_icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+}
+.footer_list{
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.5;
+}
+ul{
+    list-style-type: none;
+    margin-left: 10px;
+}
+.icon{
+    margin-right: 10px;
+    width: 14px;
+}
+
