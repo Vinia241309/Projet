@@ -17,8 +17,17 @@ html{
     height: 100%;
     z-index: 1;
     position: fixed;
+    animation: loader 5s both;  
     
-   
+}
+@keyframes loader{
+
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 .dots{
     display: flex;   
