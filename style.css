@@ -7,6 +7,60 @@ body{
 html{
     overflow-x: hidden;
 }
+
+#loader{
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    
+   
+}
+.dots{
+    display: flex;   
+}
+.light_green, .green, .blue, .navy_blue, .violet{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 20px;
+    animation: load 1.5s linear infinite;
+}
+.light_green{
+    background-color: #99e2d0;
+   } 
+.green{
+    background-color: #008766;
+    animation-delay: 0.1s;
+}
+.blue{
+    background-color: #89c8fa ;
+    animation-delay: 0.2s;
+}
+.navy_blue{
+    background-color: #003a68;
+    animation-delay: 0.3s;
+}
+.violet{
+    background-color:#9356dc ;
+    animation-delay: 0.4s;
+}
+@keyframes load{
+    0%,50%,100%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0.6);
+    }
+    75%{
+        transform: scale(1.4);
+    }
+}
+
 .head{
     display: flex;
     flex-direction: column;
@@ -141,6 +195,9 @@ input{
 .bouton{
     text-decoration: none;
     color: black;
+}
+#slide{
+    display: none;
 }
 #restaurant__section{
     display: flex;
@@ -419,11 +476,11 @@ ul{
         margin-top: 60px;
     }
     .functiunning_title{
-        margin-left: -1013px;
+        margin-left: -728px;
     }
     .functiunning_btn{
         margin-left: 50px;
-        width: 370px;
+        width: 273px;
         height: 75px;
     }
     .functiunning_section{
@@ -455,8 +512,9 @@ ul{
         
     }
     .restaurant_list_title{
-        margin-left: -1057px;
-        margin-bottom: 45px;
+        margin-left: -775px;
+        padding-top: 50px;
+    
     }
  
     
@@ -478,35 +536,56 @@ ul{
     .starter{
         padding: 0px 80px 20px 80px;
     }
-    #caroussel__img{
+    #slide{
+        background: #f7f7f7;
+        margin-top: 60px;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        margin-right: -83px;
-        animation-duration: 10s;
-        animation-name: mesImages;
-        animation-iteration-count: infinite;
-        transition: transform 10s ease-in-out;
-        transform: scale(0);
+        flex-direction: column;
+    }
+    .slider{
+
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+        background: #f7f7f7;
+        height: 390PX;
+        overflow: hidden;
+        margin-bottom: 20px;
+        
+        }
+        
+        
+    
+    
+    .slide-track{
+        animation: mesImages 5s linear infinite;
+        width: calc(350px * 4);
+        display: flex;
+        
+    }
+    .slide-track:hover{
+        animation-play-state: paused;
+    }
+    #caroussel__img{
+        display: flex;    
     }
     @keyframes mesImages {
-        0% {transform: translateX(0);
+        0% {transform: translateX(0px);
+            
         }
-        25% {transform: translateX(-350px);
-        }
-        50%{transform: translateX(-700px);
-
-        }
-        75%{transform: translateX(-1050px);
-
-        }
-        100%{transform: translateX(0);
-
-        }
+        100% {transform: translateX(calc(-380px * 4));
+            
+        }   
     }
+    
     .vertical_card:hover{
+        animation-play-state: paused;
         transform: scale(1.2);
         z-index: 1;
+        
+        
     }
     footer{
         display: flex;
@@ -525,4 +604,4 @@ ul{
         
     }
 
- }
+}
